@@ -10,6 +10,16 @@
     --img-gap: 2px;
 }
 
+.navbar-black{
+    background-color: #111;
+} 
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .container{
     width: 100%;
     display: flex;
@@ -118,11 +128,17 @@ body{
     background-color: #111;
 }
 
+.bg-change-color{
+    background-color: #111;
+}
+
 .wrapper{
-    position: absolute;
+    transition: all ease 0.3s;
+    z-index: 100;
+    position: fixed;
     padding: 0.8rem 0;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
     display: flex;
 }
 
@@ -216,7 +232,6 @@ margin-top: 0.3rem;
 display: flex;
 justify-content: center;
 overflow: hidden;
-
 }
 
 .slider{
@@ -408,10 +423,11 @@ overflow: hidden;
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 822px){
     .text-container{
-        top: 7rem;
+        top: 8rem;
     }
+
 }
 
 @media (max-width:700px){
@@ -521,6 +537,25 @@ overflow: hidden;
 
     .slider{
         --items-per-screen: 2;
+    }
+
+    .movie-title{
+        font-size: 1.5rem;
+    }
+
+    .netflix-n-logo{
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-btn{
+        font-size: 8px;
+    }
+
+    .info-icon{
+        width: 10px;
+        height: 10px;
     }
 }
 
